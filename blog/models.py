@@ -3,7 +3,9 @@ from django.db import models
 # Create your models here.
 
 class Post(models.Model):
-    pass
+    title = models.CharField(max_length=255)
+    author = models.ForeignKey("Author")
 
 class Author(models.Model):
-    pass
+    name = models.CharField(max_length=255)
+    position = models.CharField(max_length=64, blank=True)
