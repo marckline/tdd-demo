@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from rest_framework.viewsets import ModelViewSet
 
+from .models import Post
 
 class PostViewSet(ModelViewSet):
-    pass
+    queryset = Post.objects.all()
+    
 
