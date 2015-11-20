@@ -1,5 +1,6 @@
 import factory
 
+from ..models import Post, Author
 
 class AuthorFactory(factory.DjangoModelFactory):
     name = "Some Guy"
