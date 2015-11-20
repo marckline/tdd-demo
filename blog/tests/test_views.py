@@ -8,7 +8,7 @@ from .factories import PostFactory
 class PostViewTests(APITestCase):
 
     def test_post_list(self):
-        for i in range(0,1):
+        for i in range(0,2):
             post = PostFactory()
             post.save()
 
