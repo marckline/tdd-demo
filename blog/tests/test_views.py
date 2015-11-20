@@ -8,7 +8,6 @@ from .factories import PostFactory
 class PostViewTests(APITestCase):
 
     def test_post_list(self):
-
         for i in range(0,1):
             post = PostFactory()
             post.save()
@@ -17,5 +16,7 @@ class PostViewTests(APITestCase):
         response = self.client.get(url)
 
         assert len(response.data) == 2
+
+
 
 
